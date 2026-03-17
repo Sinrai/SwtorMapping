@@ -1,0 +1,296 @@
+{
+  "zone_name": "Crash Site Outpost",
+  "zone_slug": "crash_site_outpost",
+  "region_zoom_threshold": 2,
+  "maps": [
+    {
+      "name": "abandoned_control_center",
+      "image": "maps/abandoned_control_center.png",
+      "bounds": [
+        [
+          26.8432465,
+          72.7553482
+        ],
+        [
+          31.5483551,
+          77.4604568
+        ]
+      ],
+      "level": 0,
+      "draw_priority": 0,
+      "hidden": true
+    },
+    {
+      "name": "base_camp",
+      "image": "maps/base_camp.png",
+      "bounds": [
+        [
+          30.3694515,
+          49.194046
+        ],
+        [
+          72.2656555,
+          91.0902557
+        ]
+      ],
+      "level": 0,
+      "draw_priority": 0,
+      "hidden": false
+    },
+    {
+      "name": "base_camp_perimeter",
+      "image": "maps/base_camp_perimeter.png",
+      "bounds": [
+        [
+          -7.9359722,
+          4.3702545
+        ],
+        [
+          58.8320541,
+          71.1382828
+        ]
+      ],
+      "level": 0,
+      "draw_priority": 1,
+      "hidden": false
+    },
+    {
+      "name": "boss_room",
+      "image": "maps/boss_room.png",
+      "bounds": [
+        [
+          15.6545162,
+          39.9429626
+        ],
+        [
+          35.9699631,
+          60.2584076
+        ]
+      ],
+      "level": 0,
+      "draw_priority": 0,
+      "hidden": true
+    },
+    {
+      "name": "forest_biome",
+      "image": "maps/forest_biome.png",
+      "bounds": [
+        [
+          -59.1259995,
+          35.6751976
+        ],
+        [
+          13.9623585,
+          108.7635498
+        ]
+      ],
+      "level": 0,
+      "draw_priority": 0,
+      "hidden": false
+    },
+    {
+      "name": "lava_cave",
+      "image": "maps/lava_cave.png",
+      "bounds": [
+        [
+          48.0121307,
+          -51.774353
+        ],
+        [
+          80.2442474,
+          -19.5422363
+        ]
+      ],
+      "level": 0,
+      "draw_priority": 0,
+      "hidden": false
+    },
+    {
+      "name": "makrin_hollow",
+      "image": "maps/makrin_hollow.png",
+      "bounds": [
+        [
+          -39.9435577,
+          43.7058563
+        ],
+        [
+          -21.8417206,
+          61.8076935
+        ]
+      ],
+      "level": 0,
+      "draw_priority": -1,
+      "hidden": false
+    },
+    {
+      "name": "ship_central_interior",
+      "image": "maps/ship_central_interior.png",
+      "bounds": [
+        [
+          22.2164726,
+          42.001091
+        ],
+        [
+          36.1820564,
+          55.9666748
+        ]
+      ],
+      "level": -1,
+      "draw_priority": 0,
+      "hidden": false
+    },
+    {
+      "name": "snow_biome",
+      "image": "maps/snow_biome.png",
+      "bounds": [
+        [
+          -51.6079674,
+          -19.2107773
+        ],
+        [
+          22.1416588,
+          54.5388489
+        ]
+      ],
+      "level": 0,
+      "draw_priority": 0,
+      "hidden": false
+    },
+    {
+      "name": "snow_cave",
+      "image": "maps/snow_cave.png",
+      "bounds": [
+        [
+          -32.5247574,
+          -32.7153625
+        ],
+        [
+          18.5387688,
+          18.3481636
+        ]
+      ],
+      "level": 0,
+      "draw_priority": -1,
+      "hidden": false
+    },
+    {
+      "name": "snow_interior",
+      "image": "maps/snow_interior.png",
+      "bounds": [
+        [
+          -4.2259474,
+          36.4638824
+        ],
+        [
+          32.2382736,
+          72.9281006
+        ]
+      ],
+      "level": -1,
+      "draw_priority": 0,
+      "hidden": false
+    },
+    {
+      "name": "staging_room",
+      "image": "maps/staging_room.png",
+      "bounds": [
+        [
+          27.2481594,
+          47.7351608
+        ],
+        [
+          31.9998417,
+          52.4868393
+        ]
+      ],
+      "level": 0,
+      "draw_priority": 0,
+      "hidden": true
+    },
+    {
+      "name": "waterfall_caves",
+      "image": "maps/waterfall_caves.png",
+      "bounds": [
+        [
+          8.1103439,
+          -30.938736
+        ],
+        [
+          87.3402328,
+          48.291153
+        ]
+      ],
+      "level": 0,
+      "draw_priority": 0,
+      "hidden": false
+    },
+    {
+      "name": "waterfall_caves_cave_2",
+      "image": "maps/waterfall_caves_cave_2.png",
+      "bounds": [
+        [
+          55.8581467,
+          -17.4686356
+        ],
+        [
+          105.6290359,
+          32.3022575
+        ]
+      ],
+      "level": 0,
+      "draw_priority": -1,
+      "hidden": false
+    },
+    {
+      "name": "waterfall_caves_interior",
+      "image": "maps/waterfall_caves_interior.png",
+      "bounds": [
+        [
+          22.3940048,
+          25.7437019
+        ],
+        [
+          42.4375458,
+          45.7872429
+        ]
+      ],
+      "level": -1,
+      "draw_priority": 0,
+      "hidden": false
+    },
+    {
+      "name": "wisteria_interior",
+      "image": "maps/wisteria_interior.png",
+      "bounds": [
+        [
+          18.7072868,
+          54.8276978
+        ],
+        [
+          35.4577522,
+          71.5781631
+        ]
+      ],
+      "level": -1,
+      "draw_priority": 0,
+      "hidden": false
+    },
+    {
+      "name": "world_map",
+      "image": "maps/world_map.png",
+      "bounds": [
+        [
+          -60.3051071,
+          -52.9248047
+        ],
+        [
+          104.6949081,
+          112.0752106
+        ]
+      ],
+      "level": 0,
+      "draw_priority": 0,
+      "hidden": false
+    }
+  ]
+}

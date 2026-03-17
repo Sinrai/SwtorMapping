@@ -1,0 +1,85 @@
+{
+  "layers": [
+    {
+      "id": "researchers",
+      "name": "Lost Researchers",
+      "enabled": true,
+      "marker": {
+        "type": "circle",
+        "size": 5,
+        "color": "#f1c40f"
+      },
+      "show_labels": true,
+      "image": "",
+      "link": "",
+      "markers": [
+        {
+          "id": "lost_researcher_1",
+          "name": "Doctor Losoo",
+          "coord": [-224, -164, 426],
+          "level": 0
+        },
+        {
+          "id": "lost_researcher_2",
+          "name": "Doctor Deld",
+          "coord": [-399, -235, 416],
+          "level": 0
+        },
+        {
+          "id": "lost_researcher_3",
+          "name": "Doctor Gentra",
+          "coord": [170, -76, 444],
+          "level": 0
+        },
+        {
+          "id": "lost_researcher_4",
+          "name": "Professor Naul",
+          "coord": [-474, -88, 413],
+          "level": 0
+        },
+        {
+          "id": "lost_researcher_5",
+          "name": "Doctor Lamuna",
+          "coord": [-180, -117, 436],
+          "level": 0
+        },
+        {
+          "id": "lost_researcher_6",
+          "name": "Doctor Armaxa",
+          "coord": [-263, -194, 411],
+          "level": 0
+        },
+        {
+          "id": "lost_researcher_7",
+          "name": "Doctor Olobus",
+          "coord": [-446, -19, 420],
+          "level": 0
+        },
+        {
+          "id": "lost_researcher_8",
+          "name": "Doctor Maniks",
+          "coord": [766, -334, 479],
+          "level": 0
+        },
+        {
+          "id": "lost_researcher_9",
+          "name": "Doctor Sanner",
+          "coord": [634, -174, 439],
+          "level": 0
+        },
+        {
+          "id": "lost_researcher_10",
+          "name": "Doctor Maniks",
+          "coord": [-438, -805, 445],
+          "level": 0
+        },
+        {
+          "id": "lost_researcher_11",
+          "name": "Doctor Sanner",
+          "coord": [-97, -892, 439],
+          "level": 0
+        }
+      ]
+    }
+  ]
+}
