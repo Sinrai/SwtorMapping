@@ -214,13 +214,13 @@ function createMapnoteIcon(type, angleDeg) {
   });
 }
 
-function createPopupHtml(markerDef, layerDef, zoneAssetBase) {
+function createPopupHtml(markerDef, zoneAssetBase) {
   const x10 = Number(markerDef.coord[0]);
   const y10 = Number(markerDef.coord[1]);
   const name = escapeHtml(markerDef.name || markerDef.id || "Marker");
 
-  const markerImage = markerDef.image || layerDef.image || "";
-  const markerLink = markerDef.link || layerDef.link || "";
+  const markerImage = String(markerDef.image ?? "").trim();
+  const markerLink = String(markerDef.link ?? "").trim();
   const imageUrl = markerImage ? resolveAssetUrl(zoneAssetBase, markerImage) : "";
 
   let mediaHtml = "";
@@ -322,7 +322,7 @@ async function loadContentLayers(zoneAssetBase) {
           pane: "contentPane"
         });
 
-        marker.bindPopup(createPopupHtml(markerDef, layerDef, zoneAssetBase));
+        marker.bindPopup(createPopupHtml(markerDef, zoneAssetBase));
         if (showLabels) {
           marker.bindTooltip(markerDef.name || markerDef.id || "Marker", {
             permanent: true,

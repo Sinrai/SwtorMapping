@@ -19,4 +19,4 @@ Content markers are loaded from per-zone layer data and rendered above the basem
 - `level`
   - Sets initial selected level (if available in the zone).
 - `debug`
-  - `1` enables zoom debug display.
+  - `1` enables zoom debug display and coordinates on mapnotes.
