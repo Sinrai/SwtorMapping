@@ -131,7 +131,7 @@ function createCoordsControl() {
     options: { position: "topleft" },
     onAdd() {
       const container = L.DomUtil.create("div", "swtor-control coords-control");
-      container.innerHTML = `<div class="coords-value" id="coordsValue">x:    - | y:    -</div>`;
+      container.innerHTML = `<div class="coords-value" id="coordsValue">x:     - | y:     -</div>`;
       L.DomEvent.disableClickPropagation(container);
       return container;
     }
@@ -155,8 +155,8 @@ function createZoomDebugControl() {
 
 function formatCoord(value) {
   const rounded = String(Math.round(value * 10));
-  const maxFour = rounded.length > 4 ? rounded.slice(0, 4) : rounded;
-  return maxFour.padStart(4, " ");
+  const maxFive = rounded.length > 5 ? rounded.slice(0, 5) : rounded;
+  return maxFive.padStart(5, " ");
 }
 
 function updateZoomDebugValue() {
@@ -399,7 +399,7 @@ async function loadMapnotes(zoneAssetBase) {
 
       const label = name || "Mapnote";
       const debug = state.showZoomDebug;
-      const coordSubtitle = `x: ${x.toFixed(4)}, z: ${z.toFixed(4)}`;
+      const coordSubtitle = `x: ${x.toFixed(5)}, y: ${z.toFixed(5)}`;
 
       let popupHtml = `<div class="popup-content"><div class="popup-title">${escapeHtml(label)}</div>`;
       if (debug) {
