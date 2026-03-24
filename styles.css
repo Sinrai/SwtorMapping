@@ -210,3 +210,25 @@ body {
   border-radius: 4px;
   font-size: 13px;
 }
+
+.mapnote-icon {
+  background: transparent;
+  border: none;
+}
+
+.mapnote-icon-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.mapnote-icon-img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  transform-origin: center center;
+}

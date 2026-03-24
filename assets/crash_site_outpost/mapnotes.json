@@ -1,0 +1,121 @@
+[
+  {
+    "name": "Ship Interior",
+    "type": "maplink",
+    "position": [43.9365005493, -28.1208992004],
+    "angle": -30.0,
+    "level": 0
+  },
+  {
+    "name": "Ship Interior",
+    "type": "maplink",
+    "position": [16.530500412, -0.608699977398],
+    "angle": 120.0,
+    "level": 0
+  },
+  {
+    "name": "Ship Interior",
+    "type": "maplink",
+    "position": [11.2220001221, -77.8214035034],
+    "angle": -180.0,
+    "level": 0
+  },
+  {
+    "name": "Sporefall",
+    "type": "maplink",
+    "position": [19.6200008392, -58.7417984009],
+    "angle": -90.0,
+    "level": -1
+  },
+  {
+    "name": "Glacial Trespass",
+    "type": "maplink",
+    "position": [17.8899002075, -37.1921005249],
+    "angle": -180.0,
+    "level": -1
+  },
+  {
+    "name": "Geothermal Disruption",
+    "type": "maplink",
+    "position": [28.601600647, -35.1916999817],
+    "angle": 90.0,
+    "level": -1
+  },
+  {
+    "name": "Crashed Ship Perimeter",
+    "type": "quicktravel",
+    "position": [20.5657997131, -24.1933994293],
+    "angle": 0.0,
+    "level": 0
+  },
+  {
+    "name": "GSI Speeder",
+    "type": "elevator",
+    "position": [44.8117980957, -7.75360012054],
+    "angle": 0.0,
+    "level": 0
+  },
+  {
+    "name": "GSI Speeder",
+    "type": "elevator",
+    "position": [-3.12479996681, -13.4531002045],
+    "angle": 0.0,
+    "level": 0
+  },
+  {
+    "name": "GSI Speeder",
+    "type": "elevator",
+    "position": [-11.594499588, -60.5550003052],
+    "angle": 0.0,
+    "level": 0
+  },
+  {
+    "name": "GSI Speeder",
+    "type": "elevator",
+    "position": [50.6871986389, -66.0046005249],
+    "angle": 0.0,
+    "level": 0
+  },
+  {
+    "name": "Maintenance Access",
+    "type": "elevator",
+    "position": [-13.1120996475, -82.6728973389],
+    "angle": 0.0,
+    "level": 0
+  },
+  {
+    "name": "Maintenance Access",
+    "type": "elevator",
+    "position": [-25.1895999908, -43.8044013977],
+    "angle": 0.0,
+    "level": 0
+  },
+  {
+    "name": "Maintenance Access",
+    "type": "elevator",
+    "position": [-21.1557006836, -3.12010002136],
+    "angle": 0.0,
+    "level": 0
+  },
+  {
+    "name": "Maintenance Access",
+    "type": "elevator",
+    "position": [23.0494003296, 21.3332996368],
+    "angle": 0.0,
+    "level": 0
+  },
+  {
+    "name": "Maintenance Access",
+    "type": "elevator",
+    "position": [81.4289016724, -37.8829994202],
+    "angle": 0.0,
+    "level": 0
+  },
+  {
+    "name": "Maintenance Access",
+    "type": "elevator",
+    "position": [23.7612991333, -46.9930992126],
+    "angle": 0.0,
+    "level": -1
+  }
+]

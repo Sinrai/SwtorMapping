@@ -15,6 +15,9 @@ let hasMultipleLevels = false;
 const urlParams = new URLSearchParams(window.location.search);
 const requestedZoom = Number.parseFloat(urlParams.get("zoom") ?? "");
 const requestedLevel = Number.parseInt(urlParams.get("level") ?? "", 10);
+const MAPNOTE_ICON_MAX = 32;
+const MAPNOTE_ANGLE_OFFSET_DEG = 0;
+
 const state = {
   zoneSlug: urlParams.get("zone") || "crash_site_outpost",
   showZoomDebug: urlParams.get("debug") === "1",
@@ -24,7 +27,9 @@ const state = {
   activeLevel: 0,
   worldLayers: [],
   regionalLayers: [],
-  contentLayers: []
+  contentLayers: [],
+  mapnoteGroup: L.layerGroup(),
+  mapnoteMarkers: []
 };
 
 function toLeafletBounds(bounds) {
@@ -85,6 +90,35 @@ function updateLayerVisibility() {
     } else {
       map.removeLayer(contentLayer.group);
     }
+  }
+
+  let visibleMapnoteCount = 0;
+  for (const mapnoteEntry of state.mapnoteMarkers) {
+    let shouldShowMapnote;
+    if (!inRegionalMode) {
+      shouldShowMapnote = mapnoteEntry.type === "quicktravel";
+    } else {
+      shouldShowMapnote = mapnoteEntry.level === state.activeLevel;
+    }
+    if (shouldShowMapnote) {
+      if (!state.mapnoteGroup.hasLayer(mapnoteEntry.marker)) {
+        state.mapnoteGroup.addLayer(mapnoteEntry.marker);
+      }
+      visibleMapnoteCount += 1;
+    } else if (state.mapnoteGroup.hasLayer(mapnoteEntry.marker)) {
+      state.mapnoteGroup.removeLayer(mapnoteEntry.marker);
+    }
+  }
+
+  if (visibleMapnoteCount > 0 && state.mapnoteMarkers.length > 0) {
+    state.mapnoteGroup.addTo(map);
+    state.mapnoteGroup.eachLayer((marker) => {
+      if (typeof marker.bringToFront === "function") {
+        marker.bringToFront();
+      }
+    });
+  } else {
+    map.removeLayer(state.mapnoteGroup);
   }
 
   if (levelControlContainer) {
@@ -159,6 +193,25 @@ function resolveAssetUrl(zoneAssetBase, assetPath) {
 function markerCoordsToLatLng(coord) {
   const [x10, y10] = coord;
   return L.latLng(-Number(y10) / 10, Number(x10) / 10);
+}
+
+/** Mapnotes use `position: [x, z]` in map units (same as zone bounds; no ×10). */
+function mapnotePositionToLatLng(position) {
+  const x = Number(position[0]);
+  const z = Number(position[1]);
+  return L.latLng(-z, x);
+}
+
+function createMapnoteIcon(type, angleDeg) {
+  const src = `assets/map_general/${type}.png`;
+  const angle = Number(angleDeg) + MAPNOTE_ANGLE_OFFSET_DEG;
+  const box = MAPNOTE_ICON_MAX;
+  return L.divIcon({
+    className: "mapnote-icon",
+    html: `<div class="mapnote-icon-inner" style="width:${box}px;height:${box}px;"><img src="${escapeHtml(src)}" alt="" class="mapnote-icon-img" style="transform: rotate(${angle}deg);" /></div>`,
+    iconSize: [box, box],
+    iconAnchor: [box / 2, box / 2]
+  });
 }
 
 function createPopupHtml(markerDef, layerDef, zoneAssetBase) {
@@ -303,6 +356,63 @@ async function loadContentLayers(zoneAssetBase) {
     }
   } catch (error) {
     console.warn("Failed to load layers.json, skipping content layers:", error);
+  }
+}
+
+async function loadMapnotes(zoneAssetBase) {
+  try {
+    const response = await fetch(`${zoneAssetBase}/mapnotes.json`);
+    if (!response.ok) {
+      console.warn("mapnotes.json not found or unavailable, skipping mapnotes overlay.");
+      return;
+    }
+
+    const data = await response.json();
+    const entries = Array.isArray(data) ? data : [];
+
+    state.mapnoteGroup.clearLayers();
+    state.mapnoteMarkers = [];
+
+    for (const entry of entries) {
+      const pos = entry.position;
+      if (!Array.isArray(pos) || pos.length < 2) {
+        continue;
+      }
+      const x = Number(pos[0]);
+      const z = Number(pos[1]);
+      if (!Number.isFinite(x) || !Number.isFinite(z)) {
+        continue;
+      }
+
+      const type = String(entry.type || "maplink");
+      const angle = Number.isFinite(Number(entry.angle)) ? Number(entry.angle) : 0;
+      const level = Number.isFinite(Number(entry.level)) ? Number(entry.level) : 0;
+      const name = String(entry.name || "");
+
+      const latLng = mapnotePositionToLatLng(pos);
+      const icon = createMapnoteIcon(type, angle);
+      const marker = L.marker(latLng, {
+        icon,
+        pane: "contentPane",
+        interactive: true
+      });
+
+      const label = name || "Mapnote";
+      const debug = state.showZoomDebug;
+      const coordSubtitle = `x: ${x.toFixed(4)}, z: ${z.toFixed(4)}`;
+
+      let popupHtml = `<div class="popup-content"><div class="popup-title">${escapeHtml(label)}</div>`;
+      if (debug) {
+        popupHtml += `<div class="popup-coords">${escapeHtml(coordSubtitle)}</div>`;
+      }
+      popupHtml += `</div>`;
+      marker.bindPopup(popupHtml);
+
+      state.mapnoteMarkers.push({ marker, level, type });
+      state.mapnoteGroup.addLayer(marker);
+    }
+  } catch (error) {
+    console.warn("Failed to load mapnotes.json, skipping mapnotes overlay:", error);
   }
 }
 
@@ -451,6 +561,7 @@ async function loadZone() {
     createLevelControl(regionalLevels);
     createFullscreenControl();
     await loadContentLayers(zoneAssetBase);
+    await loadMapnotes(zoneAssetBase);
 
     map.on("zoomend", () => {
       updateLayerVisibility();
