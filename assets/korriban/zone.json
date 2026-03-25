@@ -1,0 +1,398 @@
+{
+  "zone_name": "Korriban",
+  "zone_slug": "korriban",
+  "region_zoom_threshold": -1,
+  "maps": [
+    {
+      "name": "map_int_academy_council_inquisitor",
+      "image": "maps/map_int_academy_council_inquisitor.png",
+      "bounds": [
+        [
+          -52.0002098,
+          -8.9325514
+        ],
+        [
+          -45.078907,
+          -2.0112486
+        ]
+      ],
+      "level": 2,
+      "draw_priority": 0,
+      "hidden": false
+    },
+    {
+      "name": "map_int_academy_council_warrior",
+      "image": "maps/map_int_academy_council_warrior.png",
+      "bounds": [
+        [
+          -50.0879364,
+          2.0859251
+        ],
+        [
+          -42.0898666,
+          10.0839949
+        ]
+      ],
+      "level": 2,
+      "draw_priority": 0,
+      "hidden": false
+    },
+    {
+      "name": "map_int_lord_khresius_compound",
+      "image": "maps/map_int_lord_khresius_compound.png",
+      "bounds": [
+        [
+          50.9480934,
+          11.38237
+        ],
+        [
+          66.4722748,
+          26.9065552
+        ]
+      ],
+      "level": 0,
+      "draw_priority": 0,
+      "hidden": true
+    },
+    {
+      "name": "map_int_sith_academy_floor01",
+      "image": "maps/map_int_sith_academy_floor01.png",
+      "bounds": [
+        [
+          -46.9057007,
+          -11.0238733
+        ],
+        [
+          -24.8259354,
+          11.0558939
+        ]
+      ],
+      "level": 0,
+      "draw_priority": 10,
+      "hidden": false
+    },
+    {
+      "name": "map_int_sith_academy_floor02",
+      "image": "maps/map_int_sith_academy_floor02.png",
+      "bounds": [
+        [
+          -49.0489731,
+          -11.4470596
+        ],
+        [
+          -28.771347,
+          8.8305645
+        ]
+      ],
+      "level": 1,
+      "draw_priority": 0,
+      "hidden": false
+    },
+    {
+      "name": "map_int_sith_academy_floor03",
+      "image": "maps/map_int_sith_academy_floor03.png",
+      "bounds": [
+        [
+          -58.8321114,
+          -9.2452383
+        ],
+        [
+          -38.6545753,
+          10.9322977
+        ]
+      ],
+      "level": 2,
+      "draw_priority": 0,
+      "hidden": false
+    },
+    {
+      "name": "map_int_sith_academy_tomb",
+      "image": "maps/map_int_sith_academy_tomb.png",
+      "bounds": [
+        [
+          -39.7009621,
+          -24.8835106
+        ],
+        [
+          -24.9180412,
+          -10.1005907
+        ]
+      ],
+      "level": 0,
+      "draw_priority": 0,
+      "hidden": false
+    },
+    {
+      "name": "map_int_starting_area_page1",
+      "image": "maps/map_int_starting_area_page1.png",
+      "bounds": [
+        [
+          7.1257629,
+          1.396965
+        ],
+        [
+          13.3302383,
+          7.6014404
+        ]
+      ],
+      "level": 0,
+      "draw_priority": 0,
+      "hidden": false
+    },
+    {
+      "name": "map_int_tomb01_floor01",
+      "image": "maps/map_int_tomb01_floor01.png",
+      "bounds": [
+        [
+          -22.9726601,
+          -20.8020668
+        ],
+        [
+          14.5768995,
+          16.7474937
+        ]
+      ],
+      "level": -1,
+      "draw_priority": 0,
+      "hidden": false
+    },
+    {
+      "name": "map_int_tomb01_floor02",
+      "image": "maps/map_int_tomb01_floor02.png",
+      "bounds": [
+        [
+          -27.226593,
+          -26.2927017
+        ],
+        [
+          7.0751162,
+          8.0090065
+        ]
+      ],
+      "level": -1,
+      "draw_priority": 10,
+      "hidden": false
+    },
+    {
+      "name": "map_int_tomb01_inquisitor",
+      "image": "maps/map_int_tomb01_inquisitor.png",
+      "bounds": [
+        [
+          1.7907925,
+          -25.5373878
+        ],
+        [
+          15.2543697,
+          -12.0738106
+        ]
+      ],
+      "level": -1,
+      "draw_priority": 0,
+      "hidden": false
+    },
+    {
+      "name": "map_int_tomb01_warrior",
+      "image": "maps/map_int_tomb01_warrior.png",
+      "bounds": [
+        [
+          -6.506197,
+          -33.3780632
+        ],
+        [
+          6.0667973,
+          -20.805069
+        ]
+      ],
+      "level": -1,
+      "draw_priority": 0,
+      "hidden": false
+    },
+    {
+      "name": "map_int_tomb02_chamber",
+      "image": "maps/map_int_tomb02_chamber.png",
+      "bounds": [
+        [
+          39.4406281,
+          8.8010693
+        ],
+        [
+          56.2252655,
+          25.5857029
+        ]
+      ],
+      "level": -1,
+      "draw_priority": 0,
+      "hidden": false
+    },
+    {
+      "name": "map_int_tomb02_reliquary",
+      "image": "maps/map_int_tomb02_reliquary.png",
+      "bounds": [
+        [
+          28.5526085,
+          19.5557404
+        ],
+        [
+          54.3386726,
+          45.3418045
+        ]
+      ],
+      "level": 0,
+      "draw_priority": 0,
+      "hidden": false
+    },
+    {
+      "name": "map_int_tomb03_archives",
+      "image": "maps/map_int_tomb03_archives.png",
+      "bounds": [
+        [
+          -7.7643061,
+          -62.2738419
+        ],
+        [
+          9.4843855,
+          -45.0251541
+        ]
+      ],
+      "level": 0,
+      "draw_priority": 10,
+      "hidden": false
+    },
+    {
+      "name": "map_int_tomb03_entry",
+      "image": "maps/map_int_tomb03_entry.png",
+      "bounds": [
+        [
+          -14.2967262,
+          -32.9141006
+        ],
+        [
+          11.1388149,
+          -7.4785604
+        ]
+      ],
+      "level": 0,
+      "draw_priority": 20,
+      "hidden": false
+    },
+    {
+      "name": "map_int_tomb03_ruins",
+      "image": "maps/map_int_tomb03_ruins.png",
+      "bounds": [
+        [
+          -12.4355984,
+          -50.2279968
+        ],
+        [
+          15.4397984,
+          -22.3526001
+        ]
+      ],
+      "level": 0,
+      "draw_priority": 0,
+      "hidden": false
+    },
+    {
+      "name": "map_int_tomb03_vault",
+      "image": "maps/map_int_tomb03_vault.png",
+      "bounds": [
+        [
+          8.5322533,
+          -55.4626999
+        ],
+        [
+          29.6173286,
+          -34.3776245
+        ]
+      ],
+      "level": 0,
+      "draw_priority": 10,
+      "hidden": false
+    },
+    {
+      "name": "map_int_tomb04_bottom_floor",
+      "image": "maps/map_int_tomb04_bottom_floor.png",
+      "bounds": [
+        [
+          -9.1719513,
+          43.0942154
+        ],
+        [
+          8.862545,
+          61.1287155
+        ]
+      ],
+      "level": -1,
+      "draw_priority": 0,
+      "hidden": false
+    },
+    {
+      "name": "map_int_tomb04_cavern_warrior",
+      "image": "maps/map_int_tomb04_cavern_warrior.png",
+      "bounds": [
+        [
+          3.0870781,
+          38.3920021
+        ],
+        [
+          18.3259315,
+          53.6308556
+        ]
+      ],
+      "level": 0,
+      "draw_priority": 0,
+      "hidden": false
+    },
+    {
+      "name": "map_int_tomb04_dashade_inquisitor",
+      "image": "maps/map_int_tomb04_dashade_inquisitor.png",
+      "bounds": [
+        [
+          -8.942585,
+          43.805233
+        ],
+        [
+          20.7858791,
+          73.533699
+        ]
+      ],
+      "level": 0,
+      "draw_priority": 0,
+      "hidden": false
+    },
+    {
+      "name": "map_int_tomb04_entry",
+      "image": "maps/map_int_tomb04_entry.png",
+      "bounds": [
+        [
+          -17.2568398,
+          7.3736229
+        ],
+        [
+          25.8267632,
+          50.4572258
+        ]
+      ],
+      "level": 0,
+      "draw_priority": 0,
+      "hidden": false
+    },
+    {
+      "name": "map_korriban_main",
+      "image": "maps/map_korriban_main.png",
+      "bounds": [
+        [
+          -33.6639557,
+          -54.3418808
+        ],
+        [
+          70.3267517,
+          49.6488266
+        ]
+      ],
+      "level": 0,
+      "draw_priority": -10,
+      "hidden": false
+    }
+  ]
+}

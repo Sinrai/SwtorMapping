@@ -1,0 +1,107 @@
+[
+  {
+    "name": "to_tomb_1_level_2.mpn",
+    "type": "maplink",
+    "position": [-11.3878002167, -0.225600004196],
+    "angle": 90.308601,
+    "level": 0
+  },
+  {
+    "name": "to_sith_academy_floor_2.mpn",
+    "type": "maplink",
+    "position": [-35.7066993713, 1.93939995766],
+    "angle": -179.944,
+    "level": 0
+  },
+  {
+    "name": "to_sith_academy_floor_2.mpn",
+    "type": "maplink",
+    "position": [-35.7240982056, -2.19269990921],
+    "angle": 0.0,
+    "level": 0
+  },
+  {
+    "name": "to_sith_academy_floor_1.mpn",
+    "type": "maplink",
+    "position": [-35.8209991455, 2.51279997826],
+    "angle": 89.692802,
+    "level": 1
+  },
+  {
+    "name": "to_sith_academy_floor_1.mpn",
+    "type": "maplink",
+    "position": [-35.8209991455, -2.70889997482],
+    "angle": 89.874001,
+    "level": 1
+  },
+  {
+    "name": "to_tomb_4_north_lower_floor.mpn",
+    "type": "maplink",
+    "position": [-7.70329999924, -54.1725006104],
+    "angle": -179.813004,
+    "level": 0
+  },
+  {
+    "name": "to_tomb_2_chamber.mpn",
+    "type": "maplink",
+    "position": [43.5993995667, -8.19410037994],
+    "angle": 0.0,
+    "level": 0
+  },
+  {
+    "name": "to_sith_academy_floor_3.mpn",
+    "type": "maplink",
+    "position": [-40.0144004822, -0.0921000018716],
+    "angle": -90.186798,
+    "level": 1
+  },
+  {
+    "name": "to_sith_academy_floor_2.mpn",
+    "type": "maplink",
+    "position": [-40.2697982788, -0.0861999988556],
+    "angle": 89.954498,
+    "level": 2
+  },
+  {
+    "name": "to_tomb_4_dashade_inquisitor.mpn",
+    "type": "maplink",
+    "position": [-7.71640014648, -53.6999015808],
+    "angle": 0.0,
+    "level": -1
+  },
+  {
+    "name": "to_korriban_submap_lower_valley.mpn",
+    "type": "maplink",
+    "position": [-1.03750002384, -0.225099995732],
+    "angle": 89.237701,
+    "level": -1
+  },
+  {
+    "name": "to_korriban_submap_upper_valley.mpn",
+    "type": "maplink",
+    "position": [-10.8207998276, -0.207200005651],
+    "angle": -90.389999,
+    "level": -1
+  },
+  {
+    "name": "to_korriban_submap_lower_wilds.mpn",
+    "type": "maplink",
+    "position": [43.5651016235, -9.20860004425],
+    "angle": -179.863007,
+    "level": -1
+  },
+  {
+    "name": "to_tomb_1_level_1.mpn",
+    "type": "maplink",
+    "position": [0.0873999968171, -0.22120000422],
+    "angle": -91.217201,
+    "level": 0
+  },
+  {
+    "name": "wnkdest_shuttle_surface.mpn",
+    "type": "elevator",
+    "position": [14.3165998459, 12.7009000778],
+    "angle": 0.0,
+    "level": 0
+  }
+]
