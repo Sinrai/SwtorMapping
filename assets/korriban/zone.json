@@ -1,7 +1,7 @@
 {
   "zone_name": "Korriban",
   "zone_slug": "korriban",
-  "region_zoom_threshold": -1,
+  "region_zoom_threshold": 2,
   "maps": [
     {
       "name": "map_int_academy_council_inquisitor",
@@ -380,6 +380,23 @@
     {
       "name": "map_korriban_main",
       "image": "maps/map_korriban_main.png",
+      "bounds": [
+        [
+          -33.6639557,
+          -54.3418808
+        ],
+        [
+          70.3267517,
+          49.6488266
+        ]
+      ],
+      "level": 0,
+      "draw_priority": -10,
+      "hidden": false
+    },
+    {
+      "name": "world_map",
+      "image": "maps/world_map.png",
       "bounds": [
         [
           -33.6639557,
