@@ -1,0 +1,228 @@
+{
+  "zone_name": "Ryloth",
+  "zone_slug": "ryloth",
+  "region_zoom_threshold": 3,
+  "maps": [
+    {
+      "name": "city_exterior",
+      "image": "maps/city_exterior.png",
+      "bounds": [
+        [
+          12.379524230957031,
+          106.03934478759766
+        ],
+        [
+          67.20922088623047,
+          160.86904907226562
+        ]
+      ],
+      "level": 0,
+      "draw_priority": 0,
+      "hidden": false
+    },
+    {
+      "name": "highland_battleground",
+      "image": "maps/highland_battleground.png",
+      "bounds": [
+        [
+          -16.39037322998047,
+          148.9011993408203
+        ],
+        [
+          47.38615417480469,
+          212.67771911621094
+        ]
+      ],
+      "level": 0,
+      "draw_priority": 0,
+      "hidden": false
+    },
+    {
+      "name": "hutt_building",
+      "image": "maps/hutt_building.png",
+      "bounds": [
+        [
+          -4.829087257385254,
+          224.02171325683594
+        ],
+        [
+          6.196516990661621,
+          235.0473175048828
+        ]
+      ],
+      "level": 0,
+      "draw_priority": 0,
+      "hidden": false
+    },
+    {
+      "name": "hutt_territory",
+      "image": "maps/hutt_territory.png",
+      "bounds": [
+        [
+          -13.166498184204102,
+          182.72848510742188
+        ],
+        [
+          57.088951110839844,
+          252.98391723632812
+        ]
+      ],
+      "level": 0,
+      "draw_priority": 0,
+      "hidden": false
+    },
+    {
+      "name": "mines",
+      "image": "maps/mines.png",
+      "bounds": [
+        [
+          -36.23894500732422,
+          198.97848510742188
+        ],
+        [
+          -1.1300430297851562,
+          234.08740234375
+        ]
+      ],
+      "level": 0,
+      "draw_priority": 0,
+      "hidden": false
+    },
+    {
+      "name": "sacred_area",
+      "image": "maps/sacred_area.png",
+      "bounds": [
+        [
+          -3.212864398956299,
+          201.4391632080078
+        ],
+        [
+          15.79183578491211,
+          220.44386291503906
+        ]
+      ],
+      "level": 0,
+      "draw_priority": 0,
+      "hidden": false
+    },
+    {
+      "name": "sky_palace",
+      "image": "maps/sky_palace.png",
+      "bounds": [
+        [
+          53.23004150390625,
+          200.3848876953125
+        ],
+        [
+          68.48697662353516,
+          215.64181518554688
+        ]
+      ],
+      "level": 1,
+      "draw_priority": 0,
+      "hidden": false
+    },
+    {
+      "name": "sky_palace_2",
+      "image": "maps/sky_palace_2.png",
+      "bounds": [
+        [
+          53.918060302734375,
+          202.12353515625
+        ],
+        [
+          65.25979614257812,
+          213.46527099609375
+        ]
+      ],
+      "level": 1,
+      "draw_priority": 0,
+      "hidden": false
+    },
+    {
+      "name": "sky_platform_1",
+      "image": "maps/sky_platform_1.png",
+      "bounds": [
+        [
+          36.04269790649414,
+          194.82269287109375
+        ],
+        [
+          49.55630111694336,
+          208.3363037109375
+        ]
+      ],
+      "level": 1,
+      "draw_priority": 0,
+      "hidden": false
+    },
+    {
+      "name": "sky_platform_2",
+      "image": "maps/sky_platform_2.png",
+      "bounds": [
+        [
+          46.252647399902344,
+          171.67135620117188
+        ],
+        [
+          65.4249496459961,
+          190.84365844726562
+        ]
+      ],
+      "level": 1,
+      "draw_priority": 0,
+      "hidden": false
+    },
+    {
+      "name": "slot_canyons",
+      "image": "maps/slot_canyons.png",
+      "bounds": [
+        [
+          -66.84040832519531,
+          148.8769989013672
+        ],
+        [
+          -15.690593719482422,
+          200.0268096923828
+        ]
+      ],
+      "level": 0,
+      "draw_priority": 0,
+      "hidden": false
+    },
+    {
+      "name": "twilek_city",
+      "image": "maps/twilek_city.png",
+      "bounds": [
+        [
+          -37.27565002441406,
+          97.84538269042969
+        ],
+        [
+          33.89497375488281,
+          169.01600646972656
+        ]
+      ],
+      "level": 0,
+      "draw_priority": 0,
+      "hidden": false
+    },
+    {
+      "name": "world_map",
+      "image": "maps/world_map.png",
+      "bounds": [
+        [
+          -68.54121398925781,
+          92.40458679199219
+        ],
+        [
+          84.87580871582031,
+          245.8216094970703
+        ]
+      ],
+      "level": 0,
+      "draw_priority": 0,
+      "hidden": false
+    }
+  ]
+}

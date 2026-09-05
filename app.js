@@ -19,7 +19,7 @@ const MAPNOTE_ICON_MAX = 32;
 const MAPNOTE_ANGLE_OFFSET_DEG = 0;
 
 const state = {
-  zoneSlug: urlParams.get("zone") || "crash_site_outpost",
+  zoneSlug: urlParams.get("zone") || "ryloth",
   showZoomDebug: urlParams.get("debug") === "1",
   requestedZoom: Number.isFinite(requestedZoom) ? requestedZoom : null,
   requestedLevel: Number.isInteger(requestedLevel) ? requestedLevel : null,

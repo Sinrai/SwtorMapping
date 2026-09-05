@@ -1,0 +1,44 @@
+[
+  {
+    "name": "city_hub_shared.mpn",
+    "type": "quicktravel",
+    "position": [0.104500003159, -146.257202148],
+    "angle": 0.0,
+    "level": 0
+  },
+  {
+    "name": "highlands_shared.mpn",
+    "type": "quicktravel",
+    "position": [13.8282003403, -178.144302368],
+    "angle": 0.0,
+    "level": 0
+  },
+  {
+    "name": "hutt_territory_shared.mpn",
+    "type": "quicktravel",
+    "position": [26.4009990692, -228.597702026],
+    "angle": 0.0,
+    "level": 0
+  },
+  {
+    "name": "maplink_platform_to_ground.mpn",
+    "type": "maplink",
+    "position": [37.3941001892, -201.64050293],
+    "angle": -90.0,
+    "level": 1
+  },
+  {
+    "name": "maplink_platform_to_ground.mpn",
+    "type": "maplink",
+    "position": [50.865398407, -181.003204346],
+    "angle": -90.0,
+    "level": 1
+  },
+  {
+    "name": "maplink_ground_to_palace.mpn",
+    "type": "maplink",
+    "position": [44.4333992004, -199.729095459],
+    "angle": 90.0,
+    "level": 0
+  }
+]
